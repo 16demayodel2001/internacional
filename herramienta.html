@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Día de la Seguridad Informática — Contraseñas Seguras</title>
+  <meta name="description" content="Consejos y herramientas para crear contraseñas seguras.">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header principal -->
+    <header class="site" role="banner">
+      <div>
+        <h1>Día Internacional de la Seguridad Informática</h1>
+        <p>Protege tu identidad: contraseñas fuertes y buenas prácticas </p>
+      </div>
+
+      <nav class="topnav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="herramienta.html">Herramienta</a>
+        <a href="buenas-practicas.html">Buenas prácticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+        
+      </nav>
+    </header>
+      <!-- Herramienta -->
+        <article class="card-section" id="herramienta" aria-labelledby="tool-title">
+          <header><h2 class="section-title" id="tool-title">Comprobador y generador de contraseñas</h2></header>
+
+          <div class="pw-tools">
+            <div class="pw-row">
+              <input id="pwInput" type="password" placeholder="Escribe o pega una contraseña..." aria-label="Contraseña">
+              <button id="toggleReveal" class="ghost" aria-pressed="false">Mostrar</button>
+            </div>
+
+            <div style="display:flex; gap:8px;">
+              <button id="checkBtn">Comprobar</button>
+              <button id="genBtn">Generar segura</button>
+              <button id="copyBtn" class="ghost">Copiar</button>
+            </div>
+
+            <div class="meter"><span id="meterBar"></span></div>
+
+            <div style="display:flex; justify-content:space-between; margin-top:6px; align-items:center;">
+              <div id="meterText" style="color:var(--muted)">Calificación: —</div>
+              <div style="font-size:0.88rem; color:var(--muted)">Longitud: <span id="pwLen">0</span></div>
+            </div>
+
+            <hr style="border:none; border-top:1px dashed #eef5ff; margin:6px 0" />

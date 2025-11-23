@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Día de la Seguridad Informática — Contraseñas Seguras</title>
+  <meta name="description" content="Consejos y herramientas para crear contraseñas seguras.">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header principal -->
+    <header class="site" role="banner">
+      <div>
+        <h1>Día Internacional de la Seguridad Informática</h1>
+        <p>Protege tu identidad: contraseñas fuertes y buenas prácticas </p>
+      </div>
+
+      <nav class="topnav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="herramienta.html">Herramienta</a>
+        <a href="buenas-practicas.html">Buenas prácticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+        
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="content">
+      <main class="card" role="main">
+        
+        <!-- Sección hero -->
+        <section class="card-section hero" id="inicio" aria-labelledby="hero-title">
+          <div class="text">
+            <h2 id="hero-title">¿Qué es el Día de la Seguridad Informática?</h2>
+            <p>Un día para crear conciencia sobre la importancia de proteger cuentas y datos personales. Aprende cómo crear contraseñas seguras, usar 2FA y administradores de contraseñas.</p>
+            <p style="margin-top:8px; color:var(--muted); font-size:0.95rem">Consejo rápido: usa frases largas y un gestor de contraseñas.</p>
+          </div>
+
+          <div style="width:520px;">
+            <img src="dia-seguridad-informatica-optimized.jpg.webp" alt="Maqueta de layout" style="width:100%; border-radius:10px; border:1px solid #e6eef8" />
+          </div>
+        </section>
+
+        <!-- Herramienta -->
+        <article class="card-section" id="herramienta" aria-labelledby="tool-title">
+          <header><h2 class="section-title" id="tool-title">Comprobador y generador de contraseñas</h2></header>
+
+          <div class="pw-tools">
+            <div class="pw-row">
+              <input id="pwInput" type="password" placeholder="Escribe o pega una contraseña..." aria-label="Contraseña">
+              <button id="toggleReveal" class="ghost" aria-pressed="false">Mostrar</button>
+            </div>
+
+            <div style="display:flex; gap:8px;">
+              <button id="checkBtn">Comprobar</button>
+              <button id="genBtn">Generar segura</button>
+              <button id="copyBtn" class="ghost">Copiar</button>
+            </div>
+
+            <div class="meter"><span id="meterBar"></span></div>
+
+            <div style="display:flex; justify-content:space-between; margin-top:6px; align-items:center;">
+              <div id="meterText" style="color:var(--muted)">Calificación: —</div>
+              <div style="font-size:0.88rem; color:var(--muted)">Longitud: <span id="pwLen">0</span></div>
+            </div>
+
+            <hr style="border:none; border-top:1px dashed #eef5ff; margin:6px 0" />
+
+            <!-- Generador avanzado -->
+            <section aria-labelledby="gen-title">
+              <h3 id="gen-title">Generador avanzado</h3>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <label style="font-size:0.9rem; color:var(--muted)">
+                  Longitud
+                  <input id="lenRange" type="range" min="8" max="32" value="16" style="margin-left:8px" />
+                </label>
+
+                <div style="margin-left:auto; color:var(--muted)">Valor: <strong id="lenVal">16</strong></div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- Buenas prácticas -->
+        <section class="card-section" id="buenas-practicas" aria-labelledby="pract-title">
+          <header><h2 class="section-title" id="pract-title">Buenas prácticas</h2></header>
+          <ul class="tips">
+            <li>Usa frases largas (passphrases) en lugar de palabras sueltas.</li>
+            <li>Activa verificación en dos pasos (2FA) siempre que puedas.</li>
+            <li>Usa un gestor de contraseñas para no reutilizar claves.</li>
+            <li>No compartas contraseñas por mensajes o email.</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" role="complementary" aria-labelledby="side-title">
+        <h3 id="side-title">Navegación y recursos</h3>
+
+        <nav aria-label="Navegación secundaria">
+          <ul style="list-style:none; padding-left:0;">
+            <li><a href="inicio.html">🏠 Inicio</a></li>
+            <li><a href="herramienta.html">🛠 Herramienta</a></li>
+            <li><a href="buenas-practicas.html">✅ Buenas prácticas</a></li>
+            <li><a href="recursos.html">Recursos</a>
+            </li><a href="contacto.html">Contacto</a>
+          </ul>
+        </nav>
+
+        <strong>Recursos útiles</strong>
+        <ul class="tips">
+          <li>Gestores: Bitwarden / KeePassXC / 1Password</li>
+          <li>2FA: Apps de autenticación o llaves físicas</li>
+          <li>Actualiza contraseñas tras filtraciones</li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page" role="contentinfo">
+      © Proyecto educativo — Día Internacional de la Seguridad Informática
+    </footer>
+  </div>
+
+  <!-- Archivo JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

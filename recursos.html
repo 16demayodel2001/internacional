@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Día de la Seguridad Informática — Contraseñas Seguras</title>
+  <meta name="description" content="Consejos y herramientas para crear contraseñas seguras.">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header principal -->
+    <header class="site" role="banner">
+      <div>
+        <h1>Día Internacional de la Seguridad Informática</h1>
+        <p>Protege tu identidad: contraseñas fuertes y buenas prácticas </p>
+      </div>
+
+      <nav class="topnav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="herramienta.html">Herramienta</a>
+        <a href="buenas-practicas.html">Buenas prácticas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+        
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="card">
+      <!-- Tarjetas de recursos -->
+      <section class="card-section" aria-labelledby="herramientas-title">
+        <header>
+          <h2 id="herramientas-title">Herramientas recomendadas</h2>
+        </header>
+        <div class="grid-resources">
+          <div class="resource-card">
+            <h3>Gestores de contraseñas</h3>
+            <p>Bitwarden, KeePassXC, 1Password – Guarda tus contraseñas de manera segura y única.</p>
+          </div>
+          <div class="resource-card">
+            <h3>Autenticación 2FA</h3>
+            <p>Google Authenticator, Authy, YubiKey – Añade una capa extra de seguridad a tus cuentas.</p>
+          </div>
+          <div class="resource-card">
+            <h3>Escáneres de seguridad</h3>
+            <p>Have I Been Pwned, VirusTotal – Comprueba si tus cuentas o archivos han sido comprometidos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-section" aria-labelledby="guias-title">
+        <header>
+          <h2 id="guias-title">Guías y tutoriales</h2>
+        </header>
+        <div class="grid-resources">
+          <div class="resource-card">
+            <h3>Privacy Tools</h3>
+            <p><a href="https://www.privacytools.io/" target="_blank">PrivacyTools.io</a> – Guías de privacidad y seguridad online.</p>
+          </div>
+          <div class="resource-card">
+            <h3>Cyber Aware</h3>
+            <p><a href="https://www.cyberaware.gov.uk/" target="_blank">Cyber Aware</a> – Consejos de seguridad para usuarios.</p>
+          </div>
+          <div class="resource-card">
+            <h3>EFF</h3>
+            <p><a href="https://www.eff.org/" target="_blank">Electronic Frontier Foundation</a> – Tutoriales y buenas prácticas de seguridad.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-section" aria-labelledby="articulos-title">
+        <header>
+          <h2 id="articulos-title">Artículos y noticias</h2>
+        </header>
+        <div class="grid-resources">
+          <div class="resource-card">
+            <h3>INCIBE</h3>
+            <p><a href="https://www.incibe.es/protege-tu-empresa" target="_blank">Protección para usuarios y empresas</a></p>
+          </div>
+          <div class="resource-card">
+            <h3>CISA</h3>
+            <p><a href="https://www.cisa.gov/uscert/ncas/tips" target="_blank">Consejos de seguridad informática</a></p>
+          </div>
+          <div class="resource-card">
+            <h3>Kaspersky Blog</h3>
+            <p><a href="https://www.kaspersky.es/blog" target="_blank">Noticias y alertas de ciberseguridad</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page">
+      © <strong>Proyecto educativo</strong> — Día Internacional de la Seguridad Informática • Hecho con ❤️
+    </footer>
+  </div>
+
+  <!-- Estilos específicos para las tarjetas -->
+  <style>
+    .grid-resources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .resource-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .resource-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .resource-card h3 {
+      margin-top: 0;
+      color: #0b2540;
+    }
+    .resource-card a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+    .resource-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>
